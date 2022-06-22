@@ -2,6 +2,14 @@ typingSpec: krzema12/github-actions-typing@v0.3
 inputs:
   distribution:
     type: enum
+    allowedValues:
+     - 'Alpine'
+     - 'Debian'
+     - 'kali-linux'
+     - 'openSUSE-Leap-15.2'
+     - 'Ubuntu-20.04'
+     - 'Ubuntu-18.04'
+     - 'Ubuntu-16.04'
   use-cache:
     type: boolean
   wsl-conf:
@@ -12,6 +20,9 @@ inputs:
     type: boolean
   additional-packages:
     type: list
+    separator: ' '
+    listItem:
+      type: string
   wsl-shell-user:
     type: string
   wsl-shell-command:
