@@ -8,12 +8,17 @@ inputs:
     type: string
   set-as-default:
     type: boolean
-  uddate:
+  update:
     type: boolean
   additional-packages:
     type: list
   wsl-shell-user:
     type: string
   wsl-shell-command:
+    type: string
+outputs:
+  wsl-shell-wrapper-path:
+    type: string
+  wsl-shell-distribution-wrapper-path:
     type: string
 
