@@ -1,0 +1,19 @@
+typingSpec: krzema12/github-actions-typing@v0.3
+inputs:
+  distribution:
+    type: enum
+  use-cache:
+    type: boolean
+  wsl-conf:
+    type: string
+  set-as-default:
+    type: boolean
+  uddate:
+    type: boolean
+  additional-packages:
+    type: list
+  wsl-shell-user:
+    type: string
+  wsl-shell-command:
+    type: string
+
